@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>박지혜 포트폴리오</title>
+
+    <style>
+
+        :root{
+            --accent-color:#ff6600;
+            --bg-color:#000000;
+        }
+
+        .body{
+            margin:0;
+            background-color:var(--bg-color);
+            color:#fff;
+            font-family:sans-serif;
+            cursor:none;
+            overflow-x:hidden;
+            overflow-y:auto;
+        }
+
+        /* 여기부터 네 기존 CSS 그대로 */
+
+        .background-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('./img/Rectangle 1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: .5;
+        }
+
+        .cursor{
+            width:30px;
+            height:30px;
+            background:rgba(255,102,0,.6);
+            border-radius:50%;
+            position:fixed;
+            pointer-events:none;
+            z-index:9999;
+            transform:translate(-50%,-50%);
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:flex-end;
+            padding-right:80px;
+            height:100vh;
+        }
+
+        .menu-section{
+            font-size:7rem;
+            font-weight:900;
+            text-align:right;
+            line-height:1.1;
+        }
+
+        .menu-item{
+            cursor:pointer;
+            margin-bottom:20px;
+            transition:.5s;
+        }
+
+        .menu-item:hover{
+            color:var(--accent-color);
+            transform:translateY(-10px);
+        }
+
+        .header{
+            position:absolute;
+            top:40px;
+            left:40px;
+            z-index:10;
+        }
+
+        .header h1{
+            font-size:1.2rem;
+            margin:0;
+            letter-spacing:2px;
+        }
+
+        .header p{
+            font-size:.9rem;
+            margin:5px 0 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="background-section"></div>
+<div class="cursor" id="cursor"></div>
+
+<div class="header">
+    <h1>PORTFOLIO</h1>
+    <p>박지혜 지원자 포트폴리오</p>
+</div>
+
+<section class="container" id="home">
+
+    <div class="menu-section">
+
+        <a href="#sec1" class="menu-item">
+            <span class="menu-num">01</span>
+            <span class="menu-title">ABOUT</span>
+        </a>
+
+        <a href="#portfolioSection" class="menu-item">
+            <span class="menu-num">02</span>
+            <span class="menu-title">PORTFOLIO</span>
+        </a>
+
+        <a href="#certificateSection" class="menu-item">
+            <span class="menu-num">03</span>
+            <span class="menu-title">CERTIFICATE</span>
+        </a>
+
+        <a href="#careerSection" class="menu-item">
+            <span class="menu-num">04</span>
+            <span class="menu-title">CAREER</span>
+        </a>
+
+    </div>
+
+</section>
+
+<nav class="side-nav" id="sideNav">
+
+    <a href="#home" class="nav-item home-btn" data-label="HOME">
+        <span class="nav-circle">⌂</span>
+    </a>
+
+    <a href="#sec1" class="nav-item active" data-label="ABOUT">
+        <span class="nav-circle">01</span>
+    </a>
+
+    <a href="#portfolioSection" class="nav-item" data-label="PORTFOLIO">
+        <span class="nav-circle">02</span>
+    </a>
+
+    <a href="#certificateSection" class="nav-item" data-label="CERTIFICATE">
+        <span class="nav-circle">03</span>
+    </a>
+
+    <a href="#careerSection" class="nav-item" data-label="CAREER">
+        <span class="nav-circle">04</span>
+    </a>
+
+</nav>
+
+<!-- 여기부터 about 붙일 예정 -->
+ <div class="main-wrapper" id="mainWrapper">
+
+    <section class="section" id="sec1">
+        <div class="text-item" id="text1">
+            지금은 <span class="point">AI 활용 능력</span>이<br>
+            작업의 질을 결정하는 시대라 생각합니다.
+        </div>
+
+        <div class="text-item" id="text2">
+            저는 AI를 활용해 작업 결과물의 퀄리티를 높이는 데 집중하고 싶어<br>
+            <span class="point">미숙하지만</span> 작은 것부터 하나씩 사용해보며
+            <span class="point">도전</span>하고 있습니다.
+        </div>
+    </section>
+
+    <section class="section" id="sec2">
+
+        <div class="photo-box"></div>
+
+        <div class="info-box">
+            <h2>
+                AI를 적극 활용해 작업하고,<br>
+                감각적인 결과물을 만들고 싶습니다.
+            </h2>
+
+            <p>박지혜</p>
+            <p>2006년생 (21세)</p>
+            <p>010-9094-1157</p>
+            <p>jihye0654@gmail.com</p>
+
+            <p class="skill-text">
+                SKILL : Photoshop, Figma, Capcut, Canva, 미리캔버스
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+
+ 
+
+<div id="portfolioSection">
+
+    <h1 class="section-title">
+        <span>PORTFOLIO <span class="point">(웹디자인&상세페이지)</span></span>
+        
+        <div class="prod-info">
+            <div>Direction & Design (100%): 5H</div>
+            <div>Dev (AI-Assisted/100% AI): 9H</div>
+        </div>
+    </h1>
+    
+
+    <div class="card-grid">
+
+        <a href="https://pakjigang.github.io/BANNER/" target="_blank" rel="noopener noreferrer" class="card">
+            <div class="img-box web1"></div>
+            <button>🔗 상세페이지 모음집</button>
+        </a>
+
+        <a href="https://pakjigang.github.io/CASE24/" target="_blank" rel="noopener noreferrer" class="card">
+            <div class="img-box web2"></div>
+            <button>🔗 웹사이트 리뉴얼 1</button>
+        </a>
+
+        <a href="https://pakjigang.github.io/MOMO/" target="_blank" rel="noopener noreferrer" class="card">
+            <div class="img-box web3"></div>
+            <button>🔗 웹사이트 리뉴얼 2</button>
+        </a>
+
+        <!-- ↓↓↓ 여기에 원래 있던 나머지 카드들을 그대로 붙여 넣으면 됨 ↓↓↓ -->
+
+    </div>
+
+<h2 class="section-title1">
+        PORTFOLIO
+        <span class="point">(배너)</span>
+    </h2>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide"><img src="./img/1.png" alt="1"></div>
+            <div class="slide"><img src="./img/6.png" alt="2"></div>
+            <div class="slide"><img src="./img/10.png" alt="3"></div>
+            <div class="slide"><img src="./img/4.png" alt="4"></div>
+            <div class="slide"><img src="./img/5.png" alt="5"></div>
+            <div class="slide"><img src="./img/3.png" alt="6"></div>
+            <div class="slide"><img src="./img/8.png" alt="7"></div>
+            <div class="slide"><img src="./img/7.png" alt="8"></div>
+            <div class="slide"><img src="./img/9.png" alt="9"></div>
+
+            <div class="slide"><img src="./img/1.png" alt="1"></div>
+            <div class="slide"><img src="./img/6.png" alt="2"></div>
+            <div class="slide"><img src="./img/10.png" alt="3"></div>
+            <div class="slide"><img src="./img/4.png" alt="4"></div>
+            <div class="slide"><img src="./img/5.png" alt="5"></div>
+            <div class="slide"><img src="./img/3.png" alt="6"></div>
+            <div class="slide"><img src="./img/8.png" alt="7"></div>
+            <div class="slide"><img src="./img/7.png" alt="8"></div>
+            <div class="slide"><img src="./img/9.png" alt="9"></div>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- ================= CERTIFICATE START ================= -->
+
+<div id="certificateSection">
+
+    <div class="page-container">
+
+        <h1>CERTIFICATE</h1>
+
+        <div class="cert-list">
+            <div class="item"><span>2025.04</span><span>화훼장식기능사</span></div>
+            <div class="item"><span>2025.03</span><span>운전면허 2종보통</span></div>
+            <div class="item"><span>2023.08</span><span>바리스타 2급</span></div>
+            <div class="item"><span>2023.08</span><span>캘리그라피 1급</span></div>
+            <div class="item"><span>2023.05</span><span>화훼창작경진대회 장려상</span></div>
+            <div class="item"><span>2023.05</span><span>청소년꽃다발만들기대회 장려상</span></div>
+        </div>
+
+        
+
+    </div>
+
+</div>
+
+<!-- ================= CERTIFICATE END ================= -->
+
+<!-- ================= CAREER START ================= -->
+
+<div id="careerSection">
+
+    <!-- 섹션 1: 싱가포르 -->
+    <section class="page-container">
+        <h1>20살 <span class="point">싱가포르 5성급 호텔</span> 취업</h1>
+
+        <p>
+            고등학교 졸업 후 시작한 해외 생활을 통해 1년 간 낯선 환경에 적응하는 법과 책임감을 익혔습니다.<br>
+            근무를 하며 다양한 경험을 해보며 무엇을 하든 제대로 배워보고 싶은 욕심이 생겼습니다.
+        </p>
+
+        <div class="gallery s1">
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+        </div>
+    </section>
+
+    <!-- 섹션 2: 화훼장식 -->
+    <section class="page-container">
+        <h1><span class="point">화훼장식</span> 전공 3년</h1>
+
+        <p>
+            고등학교 3년간 화훼장식을 전공하며 여러 작품들과 대회를 참여하며 전문성을 다졌습니다.<br>
+            작은 디테일이 결과의 차이를 만든다는 것을 잘 알고 있습니다.
+        </p>
+
+        <div class="gallery s2">
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+        </div>
+    </section>
+
+    <!-- 섹션 3: 여러 도전들 -->
+    <section class="page-container">
+        <h1>그 밖의 <span class="point">여러 도전들</span></h1>
+
+        <p>
+            학창시절부터 꾸준히 캘리그라피부터 바리스타, 제빵, 웹디자인 등<br>
+            여러 분야에 가리지 않고 도전하고 경험했습니다.
+        </p>
+
+        <div class="gallery s3">
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+        </div>
+    </section>
+        <h2 class="thanks">봐주셔서 감사합니다 !</h2>
+        
+
+
+</div>
+
+<!-- ================= CAREER END ================= -->
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cursor = document.getElementById("cursor");
+    const text1 = document.getElementById("text1");
+    const text2 = document.getElementById("text2");
+    const mainWrapper = document.getElementById("mainWrapper");
+
+    window.addEventListener("mousemove", (e) => {
+        cursor.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+    });
+
+    let step = 0; 
+    let wheelDelta = 0; // 휠 값을 쌓아둘 바구니
+    const THRESHOLD = 100; // 이 수치만큼 휠이 모이면 바로 바뀜
+
+    window.addEventListener("wheel", (e) => {
+        const rect = mainWrapper.getBoundingClientRect();
+        const isInAbout = rect.top > -200 && rect.top < 200;
+
+        if (!isInAbout) return;
+
+        // 휠 값을 누적함 (부드럽게 굴려도 값이 쌓임)
+        wheelDelta += e.deltaY;
+
+        // 1. 아래로 미친 듯이 굴릴 때
+        if (wheelDelta > THRESHOLD && step === 0) {
+            e.preventDefault();
+            text1.style.opacity = "0";
+            text2.style.opacity = "1";
+            step = 1;
+            wheelDelta = 0; // 쌓인 값 초기화
+        } 
+        // 2. 위로 미친 듯이 굴릴 때
+        else if (wheelDelta < -THRESHOLD && step === 1) {
+            e.preventDefault();
+            text1.style.opacity = "1";
+            text2.style.opacity = "0";
+            step = 0;
+            wheelDelta = 0; // 쌓인 값 초기화
+        }
+        
+        // 텍스트 전환 중에는 스크롤 방지 (전환 완료 후엔 다시 휠 흐름)
+        if (step === 1 && e.deltaY > 0) return; // 이미 2단계면 그냥 나가게 둠
+        if (step === 0 && e.deltaY < 0) return; // 이미 1단계면 그냥 나가게 둠
+        
+        e.preventDefault();
+    }, { passive: false });
+});
+const sideNav = document.getElementById("sideNav");
+
+const sections = [
+    document.getElementById("mainWrapper"),
+    document.getElementById("portfolioSection"),
+    document.getElementById("certificateSection"),
+    document.getElementById("careerSection")
+];
+
+const dots = document.querySelectorAll(".nav-item");
+
+window.addEventListener("scroll", () => {
+
+    // ABOUT부터 보이기
+    if(window.scrollY > window.innerHeight * 0.8){
+        sideNav.classList.add("show");
+    }else{
+        sideNav.classList.remove("show");
+    }
+
+    // 현재 섹션 표시
+    let current = 0;
+
+    sections.forEach((section,index)=>{
+
+        const top = section.offsetTop - 250;
+
+        if(window.scrollY >= top){
+            current = index;
+        }
+
+    });
+
+    dots.forEach(dot=>dot.classList.remove("active"));
+    dots[current].classList.add("active");
+
+});
+</script>
